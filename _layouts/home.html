@@ -40,13 +40,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">blogs</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">contact</a>
           </li>
         </ul>
       </div>
@@ -77,26 +77,39 @@
 
     </div>
   </header>
-
+  
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">my work</h2>
+      <h2 class="page-section-heading text-center  text-secondary mb-0">projects</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+      
+      
+    <nav class="navbar navbar-expand-lg bg-dark text-uppercase rounded my-3" >
+      <div class="container">
+        
+        
+        <div class="collapse navbar-collapse " >
+          <ul class="navbar-nav nav navbar-center rounded">
+            <li class="nav-item mx-0 mx-lg-1 bg-white text-dark rounded">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded " href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1 bg-white text-dark rounded">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded " href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1 bg-white rounded">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded text-secondary  text-dark " href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="divider-custom-line"></div>
       </div>
-
+    </nav>
       <!-- Portfolio Grid Items -->
       <div class="row">
-
+       
         
         {% for p_item in site.categories.portfolio_items reversed %}
         <div class="col-md-6 col-lg-4">
