@@ -1,5 +1,5 @@
 ---
-icon_src: "img/portfolio/genetic_mnist.png"
+icon_src: "img/portfolio/genetic_mnist.PNG"
 tag: "fooling neural networks"
 data_target: "portfolioModal9"
 ---
