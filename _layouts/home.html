@@ -42,6 +42,15 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">projects</a>
           </li>
+          
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experiments">experiments</a>
+          </li>
+
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#posts">posts</a>
+          </li>
+
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">about</a>
           </li>
@@ -80,41 +89,16 @@
   
   <!-- Portfolio Section -->
   
-  <h2 class="page-section-heading text-center  text-secondary   mb-3">projects</h2>
+  
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
-      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center  text-secondary   mb-3">projects</h2>
       
-
-      <!-- Icon Divider -->
-      
-    <!--
-    <nav class="navbar navbar-expand-lg bg-dark text-uppercase rounded my-3" >
-      <div class="container">
-        
-        
-        <div class="collapse navbar-collapse " >
-          <ul class="navbar-nav nav navbar-center rounded">
-            <li class="nav-item mx-0 mx-lg-1 bg-white text-dark rounded">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded " href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1 bg-white text-dark rounded">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded " href="#about">About</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1 bg-white rounded">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded text-secondary  text-dark " href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    -->
-      <!-- Portfolio Grid Items -->
       <div class="row">
        
         
-        {% for p_item in site.categories.portfolio_items reversed %}
+        {% for p_item in site.categories.projects reversed %}
         <div class="col-md-6 col-lg-4">
           {% assign ics = p_item.icon_src%}
           {%assign tg = p_item.tag%}
@@ -132,7 +116,7 @@
 
     </div>
     
-    {% for p_item in site.categories.portfolio_items reversed %}
+    {% for p_item in site.categories.projects reversed %}
     
       {% assign ics = p_item.icon_src%}
       {%assign tg = p_item.tag%}
@@ -145,6 +129,89 @@
     
   </section>
 
+    
+  <section class="page-section portfolio" id="experiments">
+    <div class="container">
+
+      <h2 class="page-section-heading text-center  text-secondary   mb-3">experiments</h2>
+      
+      <div class="row">
+       
+        
+        {% for p_item in site.categories.experiments reversed %}
+        <div class="col-md-6 col-lg-4">
+          {% assign ics = p_item.icon_src%}
+          {%assign tg = p_item.tag%}
+          {%assign dt = p_item.data_target%}
+
+          {%  include portfolio_item.html icon_src=ics tag=tg data_target=dt  %}
+          
+        </div>
+      
+          {% endfor %}
+        <!-- Portfolio Item 3 -->
+        
+      </div>
+      <!-- /.row -->
+
+    </div>
+    
+    {% for p_item in site.categories.experiments reversed %}
+    
+      {% assign ics = p_item.icon_src%}
+      {%assign tg = p_item.tag%}
+      {%assign dt = p_item.data_target%}
+      {%assign ct = p_item.content%}
+
+      {%  include portfolio_data.html icon_src=ics tag=tg data_target=dt content=ct  %}
+        
+      {% endfor %}
+    
+  </section>
+
+  <section class="page-section portfolio" id="posts">
+    <div class="container">
+
+      <h2 class="page-section-heading text-center  text-secondary   mb-3">blog posts</h2>
+      
+      <div class="row">
+       
+        
+        {% for p_item in site.categories.blogs reversed %}
+        <div class="col-md-6 col-lg-4">
+          {% assign ics = p_item.icon_src%}
+          {%assign tg = p_item.tag%}
+          {%assign dt = p_item.data_target%}
+
+          {%  include portfolio_item.html icon_src=ics tag=tg data_target=dt  %}
+          
+        </div>
+      
+          {% endfor %}
+        <!-- Portfolio Item 3 -->
+        
+      </div>
+      <!-- /.row -->
+
+    </div>
+    
+    {% for p_item in site.categories.blogs reversed %}
+    
+      {% assign ics = p_item.icon_src%}
+      {%assign tg = p_item.tag%}
+      {%assign dt = p_item.data_target%}
+      {%assign ct = p_item.content%}
+
+      {%  include portfolio_data.html icon_src=ics tag=tg data_target=dt content=ct  %}
+        
+      {% endfor %}
+    
+  </section>
+
+
+
+
+  
   <!-- About Section -->
   <section class="page-section pureBlack text-white mb-0" id="about" >
     <div class="container">
