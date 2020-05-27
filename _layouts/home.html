@@ -90,6 +90,7 @@
   <!-- Portfolio Section -->
   
   
+<section>
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
@@ -129,7 +130,7 @@
     
   </section>
 
-    
+  
   <section class="page-section portfolio" id="experiments">
     <div class="container">
 
@@ -139,7 +140,7 @@
        
         
         {% for p_item in site.categories.experiments reversed %}
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 col-xs-12">
           {% assign ics = p_item.icon_src%}
           {%assign tg = p_item.tag%}
           {%assign dt = p_item.data_target%}
@@ -210,6 +211,7 @@
 
 
 
+</section>
 
   
   <!-- About Section -->
@@ -231,14 +233,14 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 d-flex justify-text-center" >
-          <p class="lead"> <b > what I work on : </b> Computer Vision, Natural Language Processing, Statistical Modeling and Deep Reinforcement Learning to program AI in games. I hope to develop a multidisciplinary skillset.</p>
+          <p class="lead"> <strong> what I work on : </strong> Computer Vision, Natural Language Processing, Statistical Modeling and Deep Reinforcement Learning to program AI in games. I hope to develop a multidisciplinary skillset.</p>
 
         </div>
         <div class="col-lg-4 d-flex justify-text-center" >
-          <p class="lead"> <b > how I work : </b>I start with an Idea, do the math, lookup open source tools to build stuff, and then I plan and build stuff. Just like my fellow indie game developers and Hey ! if you want to work on something together get in touch !</p>
+          <p class="lead"> <strong> how I work : </strong>I start with an Idea, do the math, lookup open source tools to build stuff, and then I plan and build stuff. Just like my fellow indie game developers and Hey ! if you want to work on something together get in touch !</p>
         </div>
         <div class="col-lg-4 d-flex justify-text-center" >
-          <p class="lead"> <b > why I work : </b> If I'm universe's way of experiencing itself then I have to join the dance, play my part, discover the symphonies myself and play a melody.</p>
+          <p class="lead"> <strong> why I work : </strong> If I'm universe's way of experiencing itself then I have to join the dance, play my part, discover the symphonies myself and play a melody.</p>
 
         </div>
         
@@ -270,7 +272,7 @@
   
 
       <!-- Contact Section Form -->
-      <h1 class=" text-center  text-secondary mx-5 my-5 mb-0"> you can email me at hashkellz@gmail.com</h1>
+      <h6 class=" text-center text-secondary mx-5 my-5 mb-0"> you can email me at hashkellz@gmail.com</h6>
         
 
     </div>
