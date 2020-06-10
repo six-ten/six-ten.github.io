@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{ site.first_name}} - personal blog</title>
+  <title>{{ site.first_name}} - portfolio page</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -184,7 +184,7 @@
           {%assign tg = p_item.tag%}
           {%assign dt = p_item.data_target%}
 
-          {%  include portfolio_item.html icon_src=ics tag=tg data_target=dt  %}
+          {%  include blog_item.html icon_src=ics tag=tg data_target=dt  %}
           
         </div>
       
@@ -195,17 +195,6 @@
       <!-- /.row -->
 
     </div>
-    
-    {% for p_item in site.categories.blogs reversed %}
-    
-      {% assign ics = p_item.icon_src%}
-      {%assign tg = p_item.tag%}
-      {%assign dt = p_item.data_target%}
-      {%assign ct = p_item.content%}
-
-      {%  include portfolio_data.html icon_src=ics tag=tg data_target=dt content=ct  %}
-        
-      {% endfor %}
     
   </section>
 
