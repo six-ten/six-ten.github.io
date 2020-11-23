@@ -1,7 +1,7 @@
 ---
 icon_src: "img/portfolio/genetic_mnist.PNG"
 tag: "fooling neural networks"
-data_target: "portfolioModal9"
+data_target: "portfolioModal100"
 ---
 
 ### a little experiment to check the effectiveness of genetic algorithms in creating images that a neural network classifies with high confidence.
